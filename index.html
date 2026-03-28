@@ -159,20 +159,6 @@
       margin: 12px auto 22px;
     }
 
-    .group-title {
-      color: var(--green);
-      font-size: 14pt;
-      font-weight: 600;
-      margin: 6px 0 6px;
-    }
-
-    .group-rule {
-      width: 100%;
-      height: 1px;
-      background: var(--line);
-      margin-bottom: 14px;
-    }
-
     .list {
       display: grid;
       gap: 8px;
@@ -201,35 +187,20 @@
 
     .price { white-space: nowrap; font-weight: 400; }
 
-    .page-2 .title-block {
+    .page-title-wrap {
       max-width: 520px;
       margin: 44px auto 30px;
       text-align: center;
     }
 
-    .page-2 .intro {
-      margin-top: 6px;
-      color: var(--text);
-      font-size: 10pt;
-      font-style: italic;
-      line-height: 1.25;
+    .page-title {
+      margin: 0;
+      color: var(--green);
+      font-size: 17pt;
+      line-height: 1.1;
+      font-weight: 600;
+      letter-spacing: 0.01em;
     }
-
-    .page-2 .intro-plain {
-      margin-top: 4px;
-      font-size: 10pt;
-      line-height: 1.28;
-      color: var(--text);
-    }
-
-    .page-2 .main-price {
-      margin-top: 12px;
-      font-size: 13pt;
-      font-weight: 500;
-      color: var(--text);
-    }
-
-    .stack { display: grid; gap: 26px; }
 
     .footer-note {
       text-align: center;
@@ -252,6 +223,7 @@
 </head>
 <body>
   <div class="wrapper">
+    
     <section class="page page-1">
       <div class="top-bar"></div>
 
@@ -265,130 +237,147 @@
       <div class="divider"></div>
 
       <div class="hero">
-        <h1>Serpme Kahvaltı</h1><div class="price">700 TL</div>
-        <div class="sub-item">Kahvaltı Çocuk</div><div class="sub-price">350 TL</div>
+        <h1>MENÜ</h1>
         <div class="note">* İçeriği dönemsel değişiklikler gösterebilir.</div>
-        <div class="service">Servis Ücreti: 300 TL</div>
       </div>
 
+      
       <div class="grid-two">
         
         <section>
-          <h2 class="section-title">KAHVALTI EKSTRALARI</h2>
+          <h2 class="section-title">Kahvaltılar</h2>
+          <div class="section-underline"></div>
+          <div class="list">
+            <div class="item"><div class="line"><span class="name">Kahvaltı Çocuk</span><span class="dots"></span><span class="price">350 TL</span></div></div><div class="item"><div class="line"><span class="name">Serpme Kahvaltı</span><span class="dots"></span><span class="price">700 TL</span></div></div><div class="item"><div class="line"><span class="name">Servis Ücreti</span><span class="dots"></span><span class="price">300 TL</span></div></div>
+          </div>
+        </section>
+        <section>
+          <h2 class="section-title">Kahvaltı Ekstraları</h2>
           <div class="section-underline"></div>
           <div class="list">
             <div class="item"><div class="line"><span class="name">Haşlanmış Yumurta</span><span class="dots"></span><span class="price">40 TL</span></div></div><div class="item"><div class="line"><span class="name">Pankek (5 Adet)</span><span class="dots"></span><span class="price">180 TL</span></div></div><div class="item"><div class="line"><span class="name">Peynir Tabağı (1 Dilim)</span><span class="dots"></span><span class="price">90 TL</span></div></div><div class="item"><div class="line"><span class="name">Sigara Böreği (8 Adet)</span><span class="dots"></span><span class="price">220 TL</span></div></div><div class="item"><div class="line"><span class="name">Söğüş Tabağı</span><span class="dots"></span><span class="price">150 TL</span></div></div>
           </div>
         </section>
-        
         <section>
-          <h2 class="section-title">YUMURTA &amp;amp; TAVALAR</h2>
+          <h2 class="section-title">Yumurta ve Tavalar</h2>
           <div class="section-underline"></div>
           <div class="list">
             <div class="item"><div class="line"><span class="name">Kavurmalı Yumurta</span><span class="dots"></span><span class="price">320 TL</span></div></div><div class="item"><div class="line"><span class="name">Menemen Duble</span><span class="dots"></span><span class="price">320 TL</span></div></div><div class="item"><div class="line"><span class="name">Menemen Tek</span><span class="dots"></span><span class="price">230 TL</span></div></div><div class="item"><div class="line"><span class="name">Pastırmalı Yumurta</span><span class="dots"></span><span class="price">370 TL</span></div></div><div class="item"><div class="line"><span class="name">Sade Yumurta (Sahanda) (3 Adet)</span><span class="dots"></span><span class="price">180 TL</span></div></div><div class="item"><div class="line"><span class="name">Sucuklu Yumurta Duble</span><span class="dots"></span><span class="price">360 TL</span></div></div><div class="item"><div class="line"><span class="name">Sucuklu Yumurta Tek</span><span class="dots"></span><span class="price">250 TL</span></div></div>
           </div>
         </section>
-        
         <section>
-          <h2 class="section-title">GÖZLEMELER</h2>
+          <h2 class="section-title">Gözlemeler</h2>
           <div class="section-underline"></div>
           <div class="list">
             <div class="item"><div class="line"><span class="name">Gözleme Çeşitleri</span><span class="dots"></span><span class="price">230 TL</span></div></div>
-          </div>
-        </section>
-        
-        <section>
-          <h2 class="section-title">YEMEKLER</h2>
-          <div class="section-underline"></div>
-          <div class="list">
-            <div class="item"><div class="line"><span class="name">Çıtır Sepet</span><span class="dots"></span><span class="price">520 TL</span></div></div><div class="item"><div class="line"><span class="name">Hamburger</span><span class="dots"></span><span class="price">500 TL</span></div></div>
           </div>
         </section>
       </div>
 
       <div class="bottom-bar"></div>
     </section>
-
     <section class="page page-2">
       <div class="top-bar"></div>
 
-      <div class="title-block">
-        <h2 class="section-title">MANGAL BİZDEN</h2>
+      <div class="page-title-wrap">
+        <h2 class="page-title">MENÜ</h2>
         <div class="section-underline"></div>
-        <div class="intro">(Et ve İçecekler Sizden)</div>
-        <div class="intro-plain">Kişi başı 3 çeşit meze, salata, su, buz, ekmek, mangal ve servis</div>
-        
       </div>
 
+      
       <div class="grid-two">
-        <section class="stack">
-          
-          <div>
-            <div class="group-title">Tatlılar</div>
-            <div class="group-rule"></div>
-            <div class="list">
-              <div class="item"><div class="line"><span class="name">Beyaz Çikolatalı Browni</span><span class="dots"></span><span class="price">290 TL</span></div></div><div class="item"><div class="line"><span class="name">Cheesecake</span><span class="dots"></span><span class="price">320 TL</span></div></div><div class="item"><div class="line"><span class="name">Magnolia</span><span class="dots"></span><span class="price">290 TL</span></div></div>
-            </div>
-          </div>
-          
-          <div>
-            <div class="group-title">Beyaz Et</div>
-            <div class="group-rule"></div>
-            <div class="list">
-              <div class="item"><div class="line"><span class="name">Kanat Porsiyon</span><span class="dots"></span><span class="price">450 TL</span></div></div><div class="item"><div class="line"><span class="name">Tavuk İncik Porsiyon</span><span class="dots"></span><span class="price">550 TL</span></div></div>
-            </div>
-          </div>
-          
-          <div>
-            <div class="group-title">Kırmızı Et</div>
-            <div class="group-rule"></div>
-            <div class="list">
-              <div class="item"><div class="line"><span class="name">Köfte Porsiyon</span><span class="dots"></span><span class="price">700 TL</span></div></div><div class="item"><div class="line"><span class="name">Kuzu Şiş Porsiyon</span><span class="dots"></span><span class="price">850 TL</span></div></div><div class="item"><div class="line"><span class="name">Saç Kavurma</span><span class="dots"></span><span class="price">850 TL</span></div></div>
-            </div>
-          </div>
-          
-          <div>
-            <div class="group-title">Karışık Izgaralar</div>
-            <div class="group-rule"></div>
-            <div class="list">
-              <div class="item"><div class="line"><span class="name">Karışık Izgara Tabağı</span><span class="dots"></span><span class="price">1.200 TL</span></div></div>
-            </div>
-          </div>
-          
-          <div>
-            <div class="group-title">MANGAL BİZDEN</div>
-            <div class="group-rule"></div>
-            <div class="list">
-              <div class="item"><div class="line"><span class="name">Kişi Başı</span><span class="dots"></span><span class="price">700 TL</span></div></div>
-            </div>
+        
+        <section>
+          <h2 class="section-title">Yemekler</h2>
+          <div class="section-underline"></div>
+          <div class="list">
+            <div class="item"><div class="line"><span class="name">Çıtır Sepet</span><span class="dots"></span><span class="price">520 TL</span></div></div><div class="item"><div class="line"><span class="name">Hamburger</span><span class="dots"></span><span class="price">500 TL</span></div></div>
           </div>
         </section>
-
-        <section class="stack">
-          <div>
-            <h2 class="section-title">İÇECEKLER</h2>
-            <div class="section-underline"></div>
-            <div class="group-title">Sıcaklar</div>
-            <div class="group-rule"></div>
-            <div class="list">
-              <div class="item"><div class="line"><span class="name">Americano</span><span class="dots"></span><span class="price">220 TL</span></div></div><div class="item"><div class="line"><span class="name">Bardak Çay</span><span class="dots"></span><span class="price">50 TL</span></div></div><div class="item"><div class="line"><span class="name">Demlik Çay</span><span class="dots"></span><span class="price">300 TL</span></div></div><div class="item"><div class="line"><span class="name">Espresso</span><span class="dots"></span><span class="price">200 TL</span></div></div><div class="item"><div class="line"><span class="name">Latte</span><span class="dots"></span><span class="price">220 TL</span></div></div><div class="item"><div class="line"><span class="name">Salep</span><span class="dots"></span><span class="price">220 TL</span></div></div><div class="item"><div class="line"><span class="name">Türk Kahvesi</span><span class="dots"></span><span class="price">90 TL</span></div></div>
-            </div>
+        <section>
+          <h2 class="section-title">Mangal Bizden</h2>
+          <div class="section-underline"></div>
+          <div class="list">
+            <div class="item"><div class="line"><span class="name">Kişi Başı</span><span class="dots"></span><span class="price">700 TL</span></div></div>
           </div>
-
-          <div>
-            <div class="group-title">Soğuklar</div>
-            <div class="group-rule"></div>
-            <div class="list">
-              <div class="item"><div class="line"><span class="name">Ayran</span><span class="dots"></span><span class="price">80 TL</span></div></div><div class="item"><div class="line"><span class="name">Büyük Su</span><span class="dots"></span><span class="price">60 TL</span></div></div><div class="item"><div class="line"><span class="name">İce Tea</span><span class="dots"></span><span class="price">150 TL</span></div></div><div class="item"><div class="line"><span class="name">Küçük Şalgam</span><span class="dots"></span><span class="price">90 TL</span></div></div><div class="item"><div class="line"><span class="name">Küçük Su</span><span class="dots"></span><span class="price">25 TL</span></div></div><div class="item"><div class="line"><span class="name">Kutu Kola</span><span class="dots"></span><span class="price">150 TL</span></div></div><div class="item"><div class="line"><span class="name">Limonata</span><span class="dots"></span><span class="price">210 TL</span></div></div><div class="item"><div class="line"><span class="name">Litrelik Şalgam</span><span class="dots"></span><span class="price">260 TL</span></div></div><div class="item"><div class="line"><span class="name">Pres Portakal Suyu</span><span class="dots"></span><span class="price">220 TL</span></div></div><div class="item"><div class="line"><span class="name">Soda</span><span class="dots"></span><span class="price">60 TL</span></div></div><div class="item"><div class="line"><span class="name">Sprite</span><span class="dots"></span><span class="price">150 TL</span></div></div>
-            </div>
+        </section>
+        <section>
+          <h2 class="section-title">Beyaz Et</h2>
+          <div class="section-underline"></div>
+          <div class="list">
+            <div class="item"><div class="line"><span class="name">Kanat Porsiyon</span><span class="dots"></span><span class="price">450 TL</span></div></div><div class="item"><div class="line"><span class="name">Tavuk İncik Porsiyon</span><span class="dots"></span><span class="price">550 TL</span></div></div>
           </div>
+        </section>
+        <section>
+          <h2 class="section-title">Kırmızı Et</h2>
+          <div class="section-underline"></div>
+          <div class="list">
+            <div class="item"><div class="line"><span class="name">Köfte Porsiyon</span><span class="dots"></span><span class="price">700 TL</span></div></div><div class="item"><div class="line"><span class="name">Kuzu Şiş Porsiyon</span><span class="dots"></span><span class="price">850 TL</span></div></div><div class="item"><div class="line"><span class="name">Saç Kavurma</span><span class="dots"></span><span class="price">850 TL</span></div></div>
+          </div>
+        </section>
+      </div>
 
-          <div>
-            <h2 class="section-title">ALKOL &amp; MEZELER</h2>
-            <div class="section-underline"></div>
-            <div class="list">
-              <div class="item"><div class="line"><span class="name">Bira Sepeti</span><span class="dots"></span><span class="price">280 TL</span></div></div><div class="item"><div class="line"><span class="name">Carlsberg</span><span class="dots"></span><span class="price">250 TL</span></div></div><div class="item"><div class="line"><span class="name">Çerez</span><span class="dots"></span><span class="price">180 TL</span></div></div><div class="item"><div class="line"><span class="name">Tuborg</span><span class="dots"></span><span class="price">220 TL</span></div></div>
-            </div>
+      <div class="bottom-bar"></div>
+    </section>
+    <section class="page page-3">
+      <div class="top-bar"></div>
+
+      <div class="page-title-wrap">
+        <h2 class="page-title">MENÜ</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      
+      <div class="grid-two">
+        
+        <section>
+          <h2 class="section-title">Karışık Izgaralar</h2>
+          <div class="section-underline"></div>
+          <div class="list">
+            <div class="item"><div class="line"><span class="name">Karışık Izgara Tabağı</span><span class="dots"></span><span class="price">1.200 TL</span></div></div>
+          </div>
+        </section>
+        <section>
+          <h2 class="section-title">Tatlılar</h2>
+          <div class="section-underline"></div>
+          <div class="list">
+            <div class="item"><div class="line"><span class="name">Beyaz Çikolatalı Browni</span><span class="dots"></span><span class="price">290 TL</span></div></div><div class="item"><div class="line"><span class="name">Cheesecake</span><span class="dots"></span><span class="price">320 TL</span></div></div><div class="item"><div class="line"><span class="name">Magnolia</span><span class="dots"></span><span class="price">290 TL</span></div></div>
+          </div>
+        </section>
+        <section>
+          <h2 class="section-title">Sıcaklar</h2>
+          <div class="section-underline"></div>
+          <div class="list">
+            <div class="item"><div class="line"><span class="name">Americano</span><span class="dots"></span><span class="price">220 TL</span></div></div><div class="item"><div class="line"><span class="name">Bardak Çay</span><span class="dots"></span><span class="price">50 TL</span></div></div><div class="item"><div class="line"><span class="name">Demlik Çay</span><span class="dots"></span><span class="price">300 TL</span></div></div><div class="item"><div class="line"><span class="name">Espresso</span><span class="dots"></span><span class="price">200 TL</span></div></div><div class="item"><div class="line"><span class="name">Latte</span><span class="dots"></span><span class="price">220 TL</span></div></div><div class="item"><div class="line"><span class="name">Salep</span><span class="dots"></span><span class="price">220 TL</span></div></div><div class="item"><div class="line"><span class="name">Türk Kahvesi</span><span class="dots"></span><span class="price">90 TL</span></div></div>
+          </div>
+        </section>
+        <section>
+          <h2 class="section-title">Soğuklar</h2>
+          <div class="section-underline"></div>
+          <div class="list">
+            <div class="item"><div class="line"><span class="name">Ayran</span><span class="dots"></span><span class="price">80 TL</span></div></div><div class="item"><div class="line"><span class="name">Büyük Su</span><span class="dots"></span><span class="price">60 TL</span></div></div><div class="item"><div class="line"><span class="name">İce Tea</span><span class="dots"></span><span class="price">150 TL</span></div></div><div class="item"><div class="line"><span class="name">Küçük Şalgam</span><span class="dots"></span><span class="price">90 TL</span></div></div><div class="item"><div class="line"><span class="name">Küçük Su</span><span class="dots"></span><span class="price">25 TL</span></div></div><div class="item"><div class="line"><span class="name">Kutu Kola</span><span class="dots"></span><span class="price">150 TL</span></div></div><div class="item"><div class="line"><span class="name">Limonata</span><span class="dots"></span><span class="price">210 TL</span></div></div><div class="item"><div class="line"><span class="name">Litrelik Şalgam</span><span class="dots"></span><span class="price">260 TL</span></div></div><div class="item"><div class="line"><span class="name">Pres Portakal Suyu</span><span class="dots"></span><span class="price">220 TL</span></div></div><div class="item"><div class="line"><span class="name">Soda</span><span class="dots"></span><span class="price">60 TL</span></div></div><div class="item"><div class="line"><span class="name">Sprite</span><span class="dots"></span><span class="price">150 TL</span></div></div>
+          </div>
+        </section>
+      </div>
+
+      <div class="bottom-bar"></div>
+    </section>
+    <section class="page page-4">
+      <div class="top-bar"></div>
+
+      <div class="page-title-wrap">
+        <h2 class="page-title">MENÜ</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      
+      <div class="grid-two">
+        
+        <section>
+          <h2 class="section-title">Alkol &amp; Mezeler</h2>
+          <div class="section-underline"></div>
+          <div class="list">
+            <div class="item"><div class="line"><span class="name">Bira Sepeti</span><span class="dots"></span><span class="price">280 TL</span></div></div><div class="item"><div class="line"><span class="name">Carlsberg</span><span class="dots"></span><span class="price">250 TL</span></div></div><div class="item"><div class="line"><span class="name">Çerez</span><span class="dots"></span><span class="price">180 TL</span></div></div><div class="item"><div class="line"><span class="name">Tuborg</span><span class="dots"></span><span class="price">220 TL</span></div></div>
           </div>
         </section>
       </div>
